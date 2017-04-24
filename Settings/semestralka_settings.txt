@@ -1,0 +1,21 @@
+﻿*** Variables ***
+${url}				http://www.itnetwork.cz
+${browser}			chrome
+${sectionLink}			java
+${subsection}			Základní konstrukce jazyka Java
+${subsectionLink}		java/zaklady
+${articleTitle}			1. díl - Úvod do jazyka
+${articleLink}			java/zaklady/java-tutorial-uvod-do-jazyka-java
+${event}			xpath=//div[@class='event worked old-wall-event']
+${firstEventLink}		${event}[1]/a
+${controlElement}		//h2
+${controlElementCount}		3
+${email}			xskoj35@vse.cz
+${emailWrong}			wrong_email@vse.cz
+${password}			testcase
+${fullName}			Test Case
+${image}			Java
+${forumSectionLink}		diskuzni-forum-java
+${threadTitle}			Test
+${threadMessage}		Toto vlákno bylo vytvořeno automatizovaným testem v robot framework
+${loginError}			Neplatný email nebo heslo.

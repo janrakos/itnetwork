@@ -1,0 +1,49 @@
+﻿*** Keywords ***
+Open Browser And Go To Page
+	[Arguments]	${url}		${browser}
+	Open Browser	${url}		${browser}
+	
+Go To Article
+	[Arguments]	${sectionLink}	${subsection}	${subsectionLink}	${articleTitle}	${articleLink}	
+	Wait Until Page Contains			${sectionLink}
+	Click Link					${sectionLink}
+	Wait Until Page Contains			${subsection}
+	Click Link					${subsectionLink}
+	Wait Until Page Contains			${articleTitle}
+	Click Link					${articleLink}
+	Wait Until Page Contains			${articleTitle}
+	
+Go To First Event
+	[Arguments]	${event}	${firstEventLink}	${controlElement}	${controlElementCount}
+	Wait Until Page Contains Element	${event}
+	Click element 						${firstEventLink}
+	Xpath Should Match X Times	${controlElement}	${controlElementCount}
+	
+LogIn
+	[Arguments]	${email}	${password}	${fullName}
+	Wait Until Page Contains	Přihlásit se
+	Click Link			prihlaseni
+	Input Text			email		${email}
+	Input Text			password	${password}
+	Submit Form			login_form
+	Wait Until Page Contains	${fullName}
+	
+LogInError
+	[Arguments]	${email}	${password}	${fullName}
+	Wait Until Page Contains	Přihlásit se
+	Click Link			prihlaseni
+	Input Text			email		${email}
+	Input Text			password	${password}
+	Submit Form			login_form
+	Wait Until Page Contains	${loginError}
+	
+Create New Thread In Java Section
+	[Arguments]	${image}	${forumSectionLink}	${threadTitle}	${threadMessage}
+	Wait Until Page Contains	Fórum
+	Click Link			diskuzni-forum-o-programovani
+	Page Should Contain Image	${image}
+	Click Link			${forumSectionLink}
+	Click Element			new_thread
+	Input Text			thread_name		${threadTitle}
+	Input Text			message			${threadMessage}
+	Submit Form			comment_form
