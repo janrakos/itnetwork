@@ -10,3 +10,6 @@ Test Teardown	Close All Browsers
 Zobrazení konkrétního článku
 	Go To Article	${sectionLink}	${subsection}	${subsectionLink}	${articleTitle}	${articleLink}
 	Location Should Contain		${url}/${articleLink}
+	
+Zobrazení nejnovějšího článku na hlavní stránce
+	Go To First Event	${event}	${firstEventLink}	${controlElement}

@@ -14,10 +14,10 @@ Go To Article
 	Wait Until Page Contains			${articleTitle}
 	
 Go To First Event
-	[Arguments]	${event}	${firstEventLink}	${controlElement}	${controlElementCount}
+	[Arguments]	${event}	${firstEventLink}	${controlElement}
 	Wait Until Page Contains Element	${event}
 	Click element 						${firstEventLink}
-	Xpath Should Match X Times	${controlElement}	${controlElementCount}
+	Xpath Should Match X Times	${controlElement}	1
 	
 LogIn
 	[Arguments]	${email}	${password}	${fullName}

@@ -1,5 +1,5 @@
 ﻿*** Variables ***
-${url}				http://www.itnetwork.cz
+${url}				https://www.itnetwork.cz
 ${browser}			chrome
 ${sectionLink}			java
 ${subsection}			Základní konstrukce jazyka Java
@@ -8,8 +8,7 @@ ${articleTitle}			1. díl - Úvod do jazyka
 ${articleLink}			java/zaklady/java-tutorial-uvod-do-jazyka-java
 ${event}			xpath=//div[@class='event worked old-wall-event']
 ${firstEventLink}		${event}[1]/a
-${controlElement}		//h2
-${controlElementCount}		3
+${controlElement}		//h1
 ${email}			xskoj35@vse.cz
 ${emailWrong}			wrong_email@vse.cz
 ${password}			testcase
