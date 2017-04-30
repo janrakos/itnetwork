@@ -7,7 +7,7 @@ ${subsectionLink}		java/zaklady
 ${articleTitle}			1. díl - Úvod do jazyka
 ${articleLink}			java/zaklady/java-tutorial-uvod-do-jazyka-java
 ${event}			xpath=//div[@class='event worked old-wall-event']
-${firstEventLink}		${event}[1]/a
+${firstEventLink}		${event}[1]/a[2]
 ${controlElement}		//h1
 ${email}			xskoj35@vse.cz
 ${emailWrong}			wrong_email@vse.cz

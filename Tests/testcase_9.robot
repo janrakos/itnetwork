@@ -2,7 +2,7 @@
 Library		Selenium2Library
 Resource	../Keywords/semestralka_keywords.txt
 Resource	../Settings/semestralka_settings.txt
-Documentation	Cílem tohoto testu je ověřit, zda se správně zobrazí konkrétní požadovaný článek.
+Documentation	Cílem tohoto testu je ověřit, zda se správně zobrazí konkrétní požadovaný článek a první událost na hlavní stránce.
 Test Setup	Open Browser And Go To Page	${url}	${browser}
 Test Teardown	Close All Browsers
 
