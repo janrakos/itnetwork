@@ -30,3 +30,5 @@ ${forumSectionLink}		diskuzni-forum-java
 ${threadTitle}			Test
 ${threadMessage}		Toto vlákno bylo vytvořeno automatizovaným testem v robot framework
 ${loginError}			Neplatný email nebo heslo.
+${SearchWindow}                 xpath=//*[@id="cse-search-box"]/div/input[3]
+${SearchForm}                   xpath=//*[@id="cse-search-box"]

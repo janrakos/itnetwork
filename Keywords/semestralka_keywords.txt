@@ -69,3 +69,11 @@ EstimateArticle
 	Wait Until Page Contains Element	${event5}
 	Click Element	${event5}
 	Confirm Action
+
+Search using keywords
+    [Arguments]    ${SearchForm}    ${SearchWindow}
+    Wait Until Page Contains Element    ${SearchForm}
+    Input Text    ${SearchWindow}    David Čápka
+    Submit Form    ${SearchForm}
+    Wait Until Page Contains    Custom Search
+    Page Should Contain     https://www.itnetwork.cz/portfolio/5
