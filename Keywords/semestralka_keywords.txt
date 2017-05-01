@@ -1,79 +1,80 @@
 ﻿*** Keywords ***
 Open Browser And Go To Page
-	[Arguments]	${url}		${browser}
-	Open Browser	${url}		${browser}
-	Maximize Browser Window
-	
+    [Arguments]    ${url}    ${browser}
+    Open Browser    ${url}    ${browser}
+    Maximize Browser Window
+
 Go To Article
-	[Arguments]	${sectionLink}	${subsection}	${subsectionLink}	${articleTitle}	${articleLink}	
-	Wait Until Page Contains			${sectionLink}
-	Click Link					${sectionLink}
-	Wait Until Page Contains			${subsection}
-	Click Link					${subsectionLink}
-	Wait Until Page Contains			${articleTitle}
-	Click Link					${articleLink}
-	Wait Until Page Contains			${articleTitle}
-	
+    [Arguments]    ${sectionLink}    ${subsection}    ${subsectionLink}    ${articleTitle}    ${articleLink}
+    Wait Until Page Contains    ${sectionLink}
+    Click Link    ${sectionLink}
+    Wait Until Page Contains    ${subsection}
+    Click Link    ${subsectionLink}
+    Wait Until Page Contains    ${articleTitle}
+    Click Link    ${articleLink}
+    Wait Until Page Contains    ${articleTitle}
+
 Go To First Event
-	[Arguments]	${event}	${firstEventLink}	${controlElement}
-	Wait Until Page Contains Element	${event}
-	Click element 						${firstEventLink}
-	Xpath Should Match X Times	${controlElement}	1
-	
+    [Arguments]    ${event}    ${firstEventLink}    ${controlElement}
+    Wait Until Page Contains Element    ${event}
+    Click element    ${firstEventLink}
+    Xpath Should Match X Times    ${controlElement}    1
+
 LogIn
-	[Arguments]	${email}	${password}	${fullName}
-	Wait Until Page Contains	Přihlásit se
-	Click Link			prihlaseni
-	Input Text			email		${email}
-	Input Text			password	${password}
-	Submit Form			login_form
-	Wait Until Page Contains	${fullName}
-	
+    [Arguments]    ${email}    ${password}    ${fullName}
+    Wait Until Page Contains    Přihlásit se
+    Click Link    prihlaseni
+    Input Text    email    ${email}
+    Input Text    password    ${password}
+    Submit Form    login_form
+    Wait Until Page Contains    ${fullName}
+
 LogInError
-	[Arguments]	${email}	${password}	${fullName}
-	Wait Until Page Contains	Přihlásit se
-	Click Link			prihlaseni
-	Input Text			email		${email}
-	Input Text			password	${password}
-	Submit Form			login_form
-	Wait Until Page Contains	${loginError}
-	
+    [Arguments]    ${email}    ${password}    ${fullName}
+    Wait Until Page Contains    Přihlásit se
+    Click Link    prihlaseni
+    Input Text    email    ${email}
+    Input Text    password    ${password}
+    Submit Form    login_form
+    Wait Until Page Contains    ${loginError}
+
 Create New Thread In Java Section
-	[Arguments]	${image}	${forumSectionLink}	${threadTitle}	${threadMessage}
-	Wait Until Page Contains	Fórum
-	Click Link			diskuzni-forum-o-programovani
-	Page Should Contain Image	${image}
-	Click Link			${forumSectionLink}
-	Click Element			new_thread
-	Input Text			thread_name		${threadTitle}
-	Input Text			message			${threadMessage}
-	Submit Form			comment_form
-	
+    [Arguments]    ${image}    ${forumSectionLink}    ${threadTitle}    ${threadMessage}
+    Wait Until Page Contains    Fórum
+    Click Link    diskuzni-forum-o-programovani
+    Page Should Contain Image    ${image}
+    Click Link    ${forumSectionLink}
+    Click Element    new_thread
+    Input Text    thread_name    ${threadTitle}
+    Input Text    message    ${threadMessage}
+    Submit Form    comment_form
+
 EstimateArticle
-	[Arguments]	${sectionLink1}	${subsection1}	${subsectionLink1}	${articleTitle1}	${articleLink1}	${event1}	${event6} ${event2} ${event5}
-	Wait Until Page Contains	${sectionLink1}	
-	Click Link	${sectionLink1}
-	Wait Until Page Contains	${subsection1}
-	Click Link	${subsectionLink1}
-	Wait Until Page Contains	${articleTitle1}
-	Click Link	${articleLink1}
-	Wait Until Page Contains Element	${event1}
-	Click Element			${event1}
-	Confirm Action	
-	Click Element			${event6}
-	Click Link	${sectionLink2}
-	Wait Until Page Contains Element	${event2}
-	Click Link		${subsectionLink2}
-	Wait Until Page Contains Element	${event2}
-	Click Link			${subsectionLink3}
-	Wait Until Page Contains Element	${event5}
-	Click Element	${event5}
-	Confirm Action
+    [Arguments]    ${sectionLink1}    ${subsection1}    ${subsectionLink1}    ${articleTitle1}    ${articleLink1}    ${event1}
+    ...    ${event6} ${event2} ${event5}
+    Wait Until Page Contains    ${sectionLink1}
+    Click Link    ${sectionLink1}
+    Wait Until Page Contains    ${subsection1}
+    Click Link    ${subsectionLink1}
+    Wait Until Page Contains    ${articleTitle1}
+    Click Link    ${articleLink1}
+    Wait Until Page Contains Element    ${event1}
+    Click Element    ${event1}
+    Confirm Action
+    Click Element    ${event6}
+    Click Link    ${sectionLink2}
+    Wait Until Page Contains Element    ${event2}
+    Click Link    ${subsectionLink2}
+    Wait Until Page Contains Element    ${event2}
+    Click Link    ${subsectionLink3}
+    Wait Until Page Contains Element    ${event5}
+    Click Element    ${event5}
+    Confirm Action
 
 Search using keywords
     [Arguments]    ${SearchForm}    ${SearchWindow}
     Wait Until Page Contains Element    ${SearchForm}
     Input Text    ${SearchWindow}    David Čápka
     Submit Form    ${SearchForm}
-    Wait Until Page Contains    Custom Search
-    Page Should Contain     https://www.itnetwork.cz/portfolio/5
+    Page Should Contain    Custom Search
+ 		
