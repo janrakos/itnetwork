@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170501 12:34:02.836" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Users\1\Desktop\vse\4IT446 Řízení kvality softwaru\itnetwork-master\itnetwork-master\Tests\testcase_5.robot" id="s1" name="Testcase 5">
+<test id="s1-t1" name="Hodnoceni clanku a aplikace">
+<kw type="setup" name="Open Browser And Go To Page" library="semestralka_keywords">
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20170501 12:34:03.102" level="INFO">Opening browser 'chrome' to base url 'https://www.itnetwork.cz'</msg>
+<status status="PASS" endtime="20170501 12:34:40.007" starttime="20170501 12:34:03.102"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20170501 12:34:41.258" starttime="20170501 12:34:40.010"></status>
+</kw>
+<status status="PASS" endtime="20170501 12:34:41.258" starttime="20170501 12:34:03.102"></status>
+</kw>
+<kw name="LogIn" library="semestralka_keywords">
+<arguments>
+<arg>${email}</arg>
+<arg>${password}</arg>
+<arg>${fullName}</arg>
+</arguments>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Přihlásit se</arg>
+</arguments>
+<status status="PASS" endtime="20170501 12:34:41.281" starttime="20170501 12:34:41.260"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>prihlaseni</arg>
+</arguments>
+<msg timestamp="20170501 12:34:41.281" level="INFO">Clicking link 'prihlaseni'.</msg>
+<status status="PASS" endtime="20170501 12:34:42.218" starttime="20170501 12:34:41.281"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>email</arg>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20170501 12:34:42.218" level="INFO">Typing text 'xskoj35@vse.cz' into text field 'email'</msg>
+<status status="PASS" endtime="20170501 12:34:42.456" starttime="20170501 12:34:42.218"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20170501 12:34:42.456" level="INFO">Typing text 'testcase' into text field 'password'</msg>
+<status status="PASS" endtime="20170501 12:34:42.584" starttime="20170501 12:34:42.456"></status>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by `locator`.</doc>
+<arguments>
+<arg>login_form</arg>
+</arguments>
+<msg timestamp="20170501 12:34:42.584" level="INFO">Submitting form 'login_form'.</msg>
+<status status="PASS" endtime="20170501 12:34:44.362" starttime="20170501 12:34:42.584"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${fullName}</arg>
+</arguments>
+<status status="PASS" endtime="20170501 12:34:44.425" starttime="20170501 12:34:44.362"></status>
+</kw>
+<status status="PASS" endtime="20170501 12:34:44.425" starttime="20170501 12:34:41.258"></status>
+</kw>
+<kw name="EstimateArticle" library="semestralka_keywords">
+<arguments>
+<arg>${sectionLink1}</arg>
+<arg>${subsection1}</arg>
+<arg>${subsectionLink1}</arg>
+<arg>${articleTitle1}</arg>
+<arg>${articleLink1}</arg>
+</arguments>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${sectionLink1}</arg>
+</arguments>
+<status status="PASS" endtime="20170501 12:34:44.461" starttime="20170501 12:34:44.425"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>${sectionLink1}</arg>
+</arguments>
+<msg timestamp="20170501 12:34:44.461" level="INFO">Clicking link 'php'.</msg>
+<status status="PASS" endtime="20170501 12:34:45.571" starttime="20170501 12:34:44.461"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${subsection1}</arg>
+</arguments>
+<status status="PASS" endtime="20170501 12:34:45.621" starttime="20170501 12:34:45.571"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>${subsectionLink1}</arg>
+</arguments>
+<msg timestamp="20170501 12:34:45.621" level="INFO">Clicking link 'php/zaklady'.</msg>
+<status status="PASS" endtime="20170501 12:34:46.631" starttime="20170501 12:34:45.621"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${articleTitle1}</arg>
+</arguments>
+<status status="PASS" endtime="20170501 12:34:46.685" starttime="20170501 12:34:46.631"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>${articleLink1}</arg>
+</arguments>
+<msg timestamp="20170501 12:34:46.685" level="INFO">Clicking link 'php/zaklady/php-tutorial-uvod-do-webovych-aplikaci'.</msg>
+<status status="PASS" endtime="20170501 12:34:49.095" starttime="20170501 12:34:46.685"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${event1}</arg>
+</arguments>
+<status status="PASS" endtime="20170501 12:34:49.135" starttime="20170501 12:34:49.095"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${event1}</arg>
+</arguments>
+<msg timestamp="20170501 12:34:49.135" level="INFO">Clicking element 'xpath=//*[@id="author-bar"]/div[4]/form/span[4]'.</msg>
+<status status="PASS" endtime="20170501 12:34:49.260" starttime="20170501 12:34:49.135"></status>
+</kw>
+<kw name="Confirm Action" library="Selenium2Library">
+<doc>Dismisses currently shown confirmation dialog and returns it's message.</doc>
+<status status="PASS" endtime="20170501 12:34:49.815" starttime="20170501 12:34:49.260"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${event6}</arg>
+</arguments>
+<msg timestamp="20170501 12:34:49.815" level="INFO">Clicking element 'xpath=//*[@id="menu"]/div[3]/ul/li[4]/span'.</msg>
+<status status="PASS" endtime="20170501 12:34:49.983" starttime="20170501 12:34:49.815"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>${sectionLink2}</arg>
+</arguments>
+<msg timestamp="20170501 12:34:49.985" level="INFO">Clicking link 'freeware'.</msg>
+<status status="PASS" endtime="20170501 12:34:51.090" starttime="20170501 12:34:49.985"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${event2}</arg>
+</arguments>
+<status status="PASS" endtime="20170501 12:34:51.130" starttime="20170501 12:34:51.090"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>${subsectionLink2}</arg>
+</arguments>
+<msg timestamp="20170501 12:34:51.130" level="INFO">Clicking link 'freeware/logicke-hry-zdarma-ke-stazeni'.</msg>
+<status status="PASS" endtime="20170501 12:34:54.263" starttime="20170501 12:34:51.130"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${event2}</arg>
+</arguments>
+<status status="PASS" endtime="20170501 12:34:54.280" starttime="20170501 12:34:54.263"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>${subsectionLink3}</arg>
+</arguments>
+<msg timestamp="20170501 12:34:54.280" level="INFO">Clicking link 'programovani/construct/logicka-hra-build-the-snowman'.</msg>
+<status status="PASS" endtime="20170501 12:34:56.133" starttime="20170501 12:34:54.280"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${event5}</arg>
+</arguments>
+<status status="PASS" endtime="20170501 12:34:56.170" starttime="20170501 12:34:56.133"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${event5}</arg>
+</arguments>
+<msg timestamp="20170501 12:34:56.170" level="INFO">Clicking element 'xpath=//*[@id="author-bar"]/div[4]/form/span[5]'.</msg>
+<status status="PASS" endtime="20170501 12:34:56.290" starttime="20170501 12:34:56.170"></status>
+</kw>
+<kw name="Confirm Action" library="Selenium2Library">
+<doc>Dismisses currently shown confirmation dialog and returns it's message.</doc>
+<status status="PASS" endtime="20170501 12:34:56.841" starttime="20170501 12:34:56.290"></status>
+</kw>
+<status status="PASS" endtime="20170501 12:34:56.841" starttime="20170501 12:34:44.425"></status>
+</kw>
+<kw type="teardown" name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20170501 12:35:00.042" starttime="20170501 12:34:56.844"></status>
+</kw>
+<status status="PASS" endtime="20170501 12:35:00.042" critical="yes" starttime="20170501 12:34:03.102"></status>
+</test>
+<doc>Cílem tohoto testu je ověřit, že lze ohodnotit jednotlivý článek a aplikace.</doc>
+<status status="PASS" endtime="20170501 12:35:00.042" starttime="20170501 12:34:02.836"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Testcase 5" pass="1">Testcase 5</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

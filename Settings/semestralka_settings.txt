@@ -2,11 +2,23 @@
 ${url}				https://www.itnetwork.cz
 ${browser}			chrome
 ${sectionLink}			java
+${sectionLink1}			php
+${sectionLink2}			freeware
 ${subsection}			Základní konstrukce jazyka Java
+${subsection1}			Základní konstrukce jazyka PHP
 ${subsectionLink}		java/zaklady
+${subsectionLink1}		php/zaklady
+${subsectionLink2}		freeware/logicke-hry-zdarma-ke-stazeni
+${subsectionLink3}		programovani/construct/logicka-hra-build-the-snowman
 ${articleTitle}			1. díl - Úvod do jazyka
+${articleTitle1}		1. díl - Úvod do PHP a webových aplikací
 ${articleLink}			java/zaklady/java-tutorial-uvod-do-jazyka-java
+${articleLink1}			php/zaklady/php-tutorial-uvod-do-webovych-aplikaci
 ${event}			xpath=//div[@class='event worked old-wall-event']
+${event1}			xpath=//*[@id="author-bar"]/div[4]/form/span[4]
+${event2}			xpath=//*[@id="article-section"]/div/article/h1
+${event5}			xpath=//*[@id="author-bar"]/div[4]/form/span[5]		
+${event6}			xpath=//*[@id="menu"]/div[3]/ul/li[4]/span	
 ${firstEventLink}		${event}[1]/a[2]
 ${controlElement}		//h1
 ${email}			xskoj35@vse.cz

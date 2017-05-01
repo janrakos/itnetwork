@@ -2,6 +2,7 @@
 Open Browser And Go To Page
 	[Arguments]	${url}		${browser}
 	Open Browser	${url}		${browser}
+	Maximize Browser Window
 	
 Go To Article
 	[Arguments]	${sectionLink}	${subsection}	${subsectionLink}	${articleTitle}	${articleLink}	
@@ -47,3 +48,24 @@ Create New Thread In Java Section
 	Input Text			thread_name		${threadTitle}
 	Input Text			message			${threadMessage}
 	Submit Form			comment_form
+	
+EstimateArticle
+	[Arguments]	${sectionLink1}	${subsection1}	${subsectionLink1}	${articleTitle1}	${articleLink1}
+	Wait Until Page Contains	${sectionLink1}	
+	Click Link	${sectionLink1}
+	Wait Until Page Contains	${subsection1}
+	Click Link	${subsectionLink1}
+	Wait Until Page Contains	${articleTitle1}
+	Click Link	${articleLink1}
+	Wait Until Page Contains Element	${event1}
+	Click Element			${event1}
+	Confirm Action	
+	Click Element			${event6}
+	Click Link	${sectionLink2}
+	Wait Until Page Contains Element	${event2}
+	Click Link		${subsectionLink2}
+	Wait Until Page Contains Element	${event2}
+	Click Link			${subsectionLink3}
+	Wait Until Page Contains Element	${event5}
+	Click Element	${event5}
+	Confirm Action
