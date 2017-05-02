@@ -21,10 +21,10 @@ ${event5}			xpath=//*[@id="author-bar"]/div[4]/form/span[5]
 ${event6}			xpath=//*[@id="menu"]/div[3]/ul/li[4]/span	
 ${firstEventLink}		${event}[1]/a[2]
 ${controlElement}		//h1
-${email}			xskoj35@vse.cz
+${email}			liskiynikita@gmail.com
 ${emailWrong}			wrong_email@vse.cz
-${password}			testcase
-${fullName}			Test Case
+${password}			testik123
+${fullName}			Myky
 ${image}			Java
 ${forumSectionLink}		diskuzni-forum-java
 ${threadTitle}			Test
