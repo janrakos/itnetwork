@@ -9,4 +9,4 @@ Test Teardown	Close All Browsers
 *** Test cases ***
 Hodnoceni clanku a aplikace
 		LogIn	${email}	${password}	${fullName}
-		EstimateArticle		${sectionLink1}	${subsection1}	${subsectionLink1}	${articleTitle1}	${articleLink1}	${event1}	${event6} ${event2} ${event5}
+		EstimateArticle		${sectionLink1}	${subsection1}	${subsectionLink1}	${articleTitle1}	${articleLink1}	${event1}	${event6}	${event2}	${event5}
