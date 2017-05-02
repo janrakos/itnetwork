@@ -50,8 +50,7 @@ Create New Thread In Java Section
     Submit Form    comment_form
 
 EstimateArticle
-    [Arguments]    ${sectionLink1}    ${subsection1}    ${subsectionLink1}	${articleTitle1}	${articleLink1}	${event1}
-    ...    ${event6} ${event2} ${event5}
+    [Arguments]    ${sectionLink1}    ${subsection1}    ${subsectionLink1}	${articleTitle1}	${articleLink1}	${event1}	${event6}	${event2}	${event5}
     Wait Until Page Contains    ${sectionLink1}
     Click Link    ${sectionLink1}
     Wait Until Page Contains    ${subsection1}
